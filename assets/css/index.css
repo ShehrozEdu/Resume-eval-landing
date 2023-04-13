@@ -135,6 +135,7 @@ h6 {
 
 ul {
   margin-bottom: 0px;
+  list-style-type: none !important;
 }
 
 p {
@@ -786,11 +787,13 @@ ul {
 
 .owl-carousel .item {
   /* width: 36%; */
-  height: 10% !important; /* Set the desired height for your images */
-  display: flex;
-  /* margin: auto; */
-  justify-content: center;
-  align-items: center;
+  width: 50% !important;
+  /* height: 50% !important; */
+
+  display: flex !important ;
+  margin: auto;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .owl-carousel .owl-item img {
   width: 80% !important;
@@ -808,8 +811,8 @@ ul {
 
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next {
-  font-size: 24px; /* Customize the arrow size as needed */
-  color: #000; /* Customize the arrow color as needed */
+  font-size: 24px;
+  color: #000;
 }
 
 .owl-carousel .owl-dots {
@@ -829,10 +832,9 @@ ul {
 
 .owl-carousel .owl-dots .owl-dot {
   margin: 0 5px;
-  width: 10px; /* Customize the dot size as needed */
-  height: 10px; /* Customize the dot size as needed */
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  /* background: #000; Customize the dot color as needed */
 }
 
 @keyframes slideUp {
@@ -1005,7 +1007,13 @@ ul {
 .faq-section {
   padding: 40px 0;
 }
-
+.faq-section .card {
+  /* background: linear-gradient(
+    93.98deg,
+    #2bcdc0 -3.74%,
+    rgba(1, 13, 69, 0.37) 113.22%
+  ); */
+}
 .section-title {
   font-size: 24px;
   font-weight: bold;
@@ -1017,7 +1025,7 @@ ul {
 }
 
 .card-header:hover {
-  background-color: #f8f9fa;
+  background-color: #2bcdc0;
 }
 
 .card-header a {
@@ -1034,3 +1042,361 @@ ul {
   padding: 10px;
 }
 /* <!---------------------------FAQ Ends----------------------------------------> */
+/* <!---------------------------Contact Us Start----------------------------------------> */
+
+.contact100-more {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 30px 15px 0;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+.contact100-more:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.p-b-47 {
+  padding-bottom: 47px;
+}
+
+.size1 {
+  width: 355px;
+  max-width: 100%;
+}
+
+.p-r-25 {
+  padding-right: 25px;
+}
+
+.txt1 {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.size2 {
+  width: calc(100% - 43px);
+}
+
+.lnr {
+  font-family: Linearicons-Free;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lnr-map-marker:before {
+  content: "\e833";
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.txt2 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #999;
+}
+
+.lnr-phone-handset:before {
+  content: "\e830";
+}
+
+.txt3 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #00ad5f;
+}
+
+.lnr-envelope:before {
+  content: "\e818";
+}
+
+/* <!---------------------------Contact Us Ends----------------------------------------> */
+
+/* <!---------------------------Banner to adv Starts--------------------------------------> */
+.salaryComparison {
+  width: 100%;
+  padding: 0px 70px;
+  /* margin-top: 80px; */
+  margin-bottom: 2rem;
+}
+.salaryComaprisonContainer {
+  background: linear-gradient(
+    93.98deg,
+    #2bcdc0 -3.74%,
+    rgba(1, 13, 69, 0.8) 113.22%
+  );
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 44px;
+}
+.salarycompareText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.salarycompareText h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  font-feature-settings: "cv05" on, "cv06" on;
+  color: #ffffff;
+}
+.salarycompareText button {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.salaryToolImg {
+  width: 13rem;
+  height: 13rem;
+}
+.arrowImg {
+  width: 1rem;
+  height: 1rem;
+}
+.salarycompareText button span {
+  margin-right: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .header-area .main-nav .logo {
+    color: #1e1e1e;
+  }
+  .header-area.header-sticky .nav li a:hover,
+  .header-area.header-sticky .nav li a.active {
+    color: #2bcdc0 !important;
+    opacity: 1;
+  }
+  .header-area.header-sticky .nav li.search-icon a {
+    width: 100%;
+  }
+  .header-area {
+    background-color: #f7f7f7;
+    padding: 0px 15px;
+    height: 100px;
+    box-shadow: none;
+    text-align: center;
+  }
+  .header-area .container {
+    padding: 0px;
+  }
+  .header-area .logo {
+    margin-left: 30px;
+  }
+  .header-area .menu-trigger {
+    display: block !important;
+  }
+  .header-area .main-nav {
+    overflow: hidden;
+  }
+  .header-area .main-nav .nav {
+    float: none;
+    width: 100%;
+    display: none;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+    margin-left: 0px;
+  }
+  .header-area .main-nav .nav li:first-child {
+    border-top: 1px solid #eee;
+  }
+  .header-area.header-sticky .nav {
+    margin-top: 100px !important;
+  }
+  .header-area .main-nav .nav li {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .header-area .main-nav .nav li a {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0px !important;
+    border: none !important;
+    background: #f7f7f7 !important;
+    color: #191a20 !important;
+  }
+  .header-area .main-nav .nav li a:hover {
+    background: #eee !important;
+    color: #2bcdc0 !important;
+  }
+  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+    position: relative;
+    visibility: inherit;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    top: 0px;
+    width: 100%;
+    box-shadow: none;
+    height: 0px;
+    transition: all 0s;
+  }
+  .header-area .main-nav .nav li.submenu ul li a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .header-area .main-nav .nav li.submenu ul li a:hover:before {
+    width: 0px;
+  }
+  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+    height: auto;
+  }
+  .header-area .main-nav .nav li.has-sub:after {
+    color: #3b566e;
+    right: 30px;
+    font-size: 14px;
+    top: 15px;
+  }
+  .header-area .main-nav .nav li.submenu:hover ul,
+  .header-area .main-nav .nav li.submenu:focus ul {
+    height: 0px;
+  }
+}
+
+@media (min-width: 767px) {
+  .header-area .main-nav .nav {
+    display: flex !important;
+  }
+}
+@media (max-width: 767px) {
+  .header-area .main-nav .nav {
+    display: flex !important;
+  }
+  .salaryComparison {
+    padding: 0.2rem;
+  }
+  .salarycompareText h3 {
+    font-size: 20px;
+    /* line-height: 0; */
+  }
+}
+@media screen and (max-width: 768px) {
+  .salaryComaprisonContainer {
+    padding: 30px 8px !important;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .icon {
+    margin-bottom: 1rem;
+  }
+  .down-content {
+    text-align: center;
+  }
+}
+
+/* <!---------------------------Banner to adv Ends--------------------------------------> */
+
+/* <!---------------------------Footer Starts----------------------------------------> */
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Main footer */
+.mainfooter {
+  background: #010d45;
+  color: #fff;
+  padding: 30px;
+}
+
+/* Copyrights row */
+.copyrightsRow {
+  border-top: 1px solid #001473;
+  padding: 15px 0px;
+}
+
+/* Footer text */
+.mainfooter p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Our App section */
+.ourApp {
+  padding: 30px;
+}
+
+/* Footer list */
+.mainfooter ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact info */
+.contactInfo {
+  padding: 15px 0;
+}
+
+/* Social icons */
+.socialIconFooter {
+  margin-top: 30px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .mainfooter {
+    padding: 20px;
+  }
+
+  .ourApp {
+    padding: 20px;
+  }
+}
+/* <!---------------------------Footer Ends----------------------------------------> */
