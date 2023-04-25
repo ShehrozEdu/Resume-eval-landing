@@ -3,7 +3,6 @@ var downloadButton = document.querySelector(".button-download");
 downloadButton.addEventListener("click", function () {
   var activeItem = document.querySelector(".owl-resume-item .owl-item.active");
 
-  // Get the image element within the active carousel item
   var pdfElement = activeItem.querySelector("object"); // Assuming the PDF is embedded using <object> tag
 
   // Extract the PDF source URL
@@ -25,6 +24,7 @@ $(".owl-resume-item").owlCarousel({
   loop: true,
   dots: true,
   // nav: true,
+  autoplayTimeout: 6000,
   autoplay: true,
   margin: 30,
   responsive: {
