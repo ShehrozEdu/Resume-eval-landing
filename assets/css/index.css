@@ -104,7 +104,7 @@ hgroup {
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -130,7 +130,7 @@ h5,
 h6 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
 }
 
 ul {
@@ -139,7 +139,7 @@ ul {
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 25px;
   color: #2a2a2a;
 }
@@ -604,7 +604,7 @@ ul {
 
 .text-bg h1 {
   color: #000;
-  line-height: 90px;
+  line-height: 60px;
   padding-bottom: 40px;
   font-weight: 700;
   padding-top: 40px;
@@ -698,7 +698,7 @@ ul {
   }
 
   .text-bg h1 {
-    line-height: 60px;
+    line-height: 40px;
     padding-bottom: 20px;
     padding-top: 20px;
   }
@@ -734,8 +734,8 @@ ul {
   }
   .text-bg h1 {
     /* Adjust font-size, line-height, and padding values for smaller screens */
-    font-size: 1.8rem;
-    line-height: 60px;
+    /* font-size: 1.8rem; */
+    line-height: 40px;
     padding-bottom: 20px;
     padding-top: 20px;
   }
@@ -770,7 +770,7 @@ ul {
 }
 .topExecutive h2 {
   font-weight: 700;
-  font-size: 15px;
+  /* font-size: 15px; */
   line-height: 22px;
   color: #010d45;
   text-align: center;
@@ -852,6 +852,7 @@ ul {
 
 .owl-carousel {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
 }
@@ -869,20 +870,30 @@ ul {
 .owl-carousel .owl-item img {
   width: 80% !important;
 }
+.owl-item active {
+  z-index: 100;
+}
 
 /* Example CSS for Owl Carousel arrows */
 .owl-carousel .owl-nav {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.owl-prev {
+  left: 0 !important;
+}
+.owl-next {
+  right: 0 !important;
 }
 
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next {
-  font-size: 24px;
+  font-size: 44px !important;
   color: #000;
 }
 
@@ -906,6 +917,9 @@ ul {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+.button-download {
+  padding: 10px 100px !important;
 }
 
 @media (max-width: 768px) {
@@ -1126,6 +1140,26 @@ ul {
 
 .card-body {
   padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .faq-section {
+    padding: 20px 0;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .card-header {
+    padding: 1rem !important;
+  }
+  .card-body {
+    padding: 5px;
+  }
+  .p-tag-faq {
+    font-size: 15px !important;
+  }
+  .p-tag-resume {
+    font-size: 12px !important;
+  }
 }
 /* <!---------------------------FAQ Ends----------------------------------------> */
 /* <!---------------------------Contact Us Start----------------------------------------> */
@@ -1429,60 +1463,93 @@ ul {
 /* <!---------------------------Banner to adv Ends--------------------------------------> */
 
 /* <!---------------------------Footer Starts----------------------------------------> */
-.footer {
+footer {
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  background: #161c28;
+  padding: 58px 72px;
+}
+footer .footerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footerContainer .companyDetails p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #d1d1d1;
+  margin-top: 39px;
+}
+.footerContainer .companyDetails h3 {
+  margin-top: 23px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 34px;
+  color: #ffffff;
+}
+.footerServices {
   display: flex;
   flex-direction: column;
-  width: 100%;
+}
+.footerServices h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
-/* Main footer */
-.mainfooter {
-  background: #010d45;
-  color: #fff;
-  padding: 30px;
-}
-
-/* Copyrights row */
-.copyrightsRow {
-  border-top: 1px solid #001473;
-  padding: 15px 0px;
-}
-
-/* Footer text */
-.mainfooter p {
+.footerServices p {
+  font-weight: 400;
   font-size: 14px;
-  font-weight: 300;
+  line-height: 34px;
+  color: #e7e7e7;
+  cursor: pointer;
 }
-
-/* Our App section */
-.ourApp {
-  padding: 30px;
+.footerServices .location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #e7e7e7;
 }
-
-/* Footer list */
-.mainfooter ul {
-  margin: 0;
-  padding: 0;
+.footerServices .emailId {
+  margin-top: 37px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #e7e7e7;
 }
-
-/* Contact info */
-.contactInfo {
-  padding: 15px 0;
-}
-
-/* Social icons */
-.socialIconFooter {
-  margin-top: 30px;
+.footerServices h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-top: 9px;
 }
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
-  .mainfooter {
-    padding: 20px;
+@media (max-width: 767px) {
+  footer {
+    margin-top: 48px;
+    width: 100%;
+    padding: 40px 24px;
   }
-
-  .ourApp {
-    padding: 20px;
+  footer .footerContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer .footerContainer > * {
+    flex: auto;
+  }
+  .footerServices h3 {
+    line-height: 15px;
+  }
+  .footerServices p {
+    line-height: 10px;
   }
 }
 /* <!---------------------------Footer Ends----------------------------------------> */
