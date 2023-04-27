@@ -859,19 +859,25 @@ ul {
 
 .owl-carousel .item {
   /* width: 36%; */
-  width: 50% !important;
-  /* height: 50% !important; */
+  width: 70% !important;
+  /* height: 94vw !important; */
 
   display: flex !important ;
   margin: auto;
   justify-content: center !important;
-  align-items: center !important;
+  /* align-items: center !important; */
 }
 .owl-carousel .owl-item img {
   width: 80% !important;
 }
 .owl-item active {
   z-index: 100;
+}
+button.owl-next,
+button.owl-prev {
+  color: #161c28 !important;
+  background: none !important;
+  /* border: 2px black !important; */
 }
 
 /* Example CSS for Owl Carousel arrows */
@@ -899,7 +905,7 @@ ul {
 
 .owl-carousel .owl-dots {
   position: absolute;
-  bottom: -8%;
+  bottom: -4%;
   left: 4%;
   right: 0;
   margin-bottom: 10px;
@@ -930,6 +936,14 @@ ul {
   .owl-carousel .owl-dots {
     position: absolute;
     bottom: -16%;
+  }
+  .button-download {
+    padding: 10px 53px !important;
+  }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    font-size: 22px !important;
+    color: #000;
   }
 }
 /* <!---------------------------Resume Carousel Ends----------------------------------------> */
