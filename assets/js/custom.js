@@ -7,10 +7,10 @@ downloadButton.addEventListener("click", function () {
 
   // Extract the document source URL
   var docURL = docElement.getAttribute("data");
-  const randomNumber = Math.floor(Math.random() * 10000) + 1;
+
   var downloadLink = document.createElement("a");
   downloadLink.href = docURL;
-  downloadLink.download = `"resume-template-${randomNumber}.doc"`;
+  downloadLink.download = `"resume-template.doc"`;
   downloadLink.style.display = "none";
   document.body.appendChild(downloadLink);
 

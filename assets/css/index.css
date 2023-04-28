@@ -705,6 +705,7 @@ ul {
 
   .text-bg p {
     line-height: 24px;
+    font-size: 14px;
   }
 
   .text-bg a {
@@ -905,8 +906,8 @@ button.owl-prev {
 
 .owl-carousel .owl-dots {
   position: absolute;
-  bottom: -4%;
-  left: 4%;
+  bottom: -5%;
+  left: 3%;
   right: 0;
   margin-bottom: 10px;
 }
@@ -917,7 +918,6 @@ button.owl-prev {
 .owl-theme .owl-dots .owl-dot span {
   background: #869791;
 }
-
 .owl-carousel .owl-dots .owl-dot {
   margin: 0 5px;
   width: 10px;
@@ -931,6 +931,7 @@ button.owl-prev {
 @media (max-width: 768px) {
   .owl-carousel .item {
     width: 100% !important;
+
     border: 0;
   }
   .owl-carousel .owl-dots {
@@ -1086,7 +1087,9 @@ button.owl-prev {
   display: flex;
   padding: 32px 0px 0px 0px;
 }
-
+.border-left-comparison {
+  border-left: 1px solid #00000031 !important;
+}
 .pill-wrapper {
   position: relative;
 }
@@ -1116,6 +1119,9 @@ button.owl-prev {
   .right-pill {
     position: static; /* Reset position for mobile and tablet devices */
     margin-top: 10px; /* Add margin for spacing */
+  }
+  .border-left-comparison {
+    border: none !important;
   }
 }
 
@@ -1172,7 +1178,7 @@ button.owl-prev {
     font-size: 15px !important;
   }
   .p-tag-resume {
-    font-size: 12px !important;
+    font-size: 13px !important;
   }
 }
 /* <!---------------------------FAQ Ends----------------------------------------> */
@@ -1554,7 +1560,7 @@ footer .footerContainer {
   }
   footer .footerContainer {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 45px;
   }
   footer .footerContainer > * {
     flex: auto;
