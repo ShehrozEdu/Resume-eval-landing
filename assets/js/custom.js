@@ -1,22 +1,18 @@
-var downloadButton = document.querySelector(".button-download");
+$(".button-download").click(function () {
+  var activeItem = $(".owl-resume-item .owl-item.active");
+  var docElement = activeItem.find("object");
+  var docURL = docElement.attr("data");
+  var randomNum = Math.floor(Math.random() * 10000);
+  var fileName = "resume-template-" + randomNum + ".doc";
+  var downloadLink = $("<a></a>");
+  downloadLink.attr("href", docURL);
+  downloadLink.attr("download", fileName);
+  downloadLink.css("display", "none");
+  $("body").append(downloadLink);
 
-downloadButton.addEventListener("click", function () {
-  var activeItem = document.querySelector(".owl-resume-item .owl-item.active");
+  downloadLink[0].click();
 
-  var docElement = activeItem.querySelector("object"); // Assuming the Word document is embedded using <object> tag
-
-  // Extract the document source URL
-  var docURL = docElement.getAttribute("data");
-
-  var downloadLink = document.createElement("a");
-  downloadLink.href = docURL;
-  downloadLink.download = `"resume-template.doc"`;
-  downloadLink.style.display = "none";
-  document.body.appendChild(downloadLink);
-
-  downloadLink.click();
-
-  document.body.removeChild(downloadLink);
+  downloadLink.remove();
 });
 
 $(".owl-resume-item").owlCarousel({
