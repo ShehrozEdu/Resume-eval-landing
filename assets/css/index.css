@@ -910,7 +910,7 @@ button.owl-prev {
 
 .owl-carousel .owl-dots {
   position: absolute;
-  bottom: -5%;
+  bottom: -8%;
   left: 3%;
   right: 0;
   margin-bottom: 10px;
@@ -944,7 +944,7 @@ button.owl-prev {
 
   .owl-carousel .owl-dots {
     position: absolute;
-    bottom: -16%;
+    bottom: -10%;
   }
 
   .button-download {
