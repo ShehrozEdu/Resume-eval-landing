@@ -493,9 +493,10 @@ ul {
   color: #fff;
 }
 
-.loginSign:hover {
-  background-color: #2bcdc0;
-  box-shadow: 0px 10px 20px #2bcdc0;
+.loginSign:hover,
+.loginSign:focus {
+  background-color: #2bcdc0 !important;
+  box-shadow: 0px 10px 20px #2bcdc0 !important;
   color: #fff;
 }
 
@@ -815,7 +816,7 @@ ul {
     top: 0px;
     display: flex;
     left: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
     animation: bannermove 10s linear infinite;
     height: 100px;
@@ -871,6 +872,7 @@ ul {
 
 .owl-carousel .owl-item img {
   width: 50% !important;
+  border: 2px solid #535353;
 }
 
 .owl-item active {
