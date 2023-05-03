@@ -140,7 +140,7 @@ ul {
 }
 
 p {
-  font-size: 18px;
+  /* font-size: 15px; */
   line-height: 25px;
   color: #2a2a2a;
 }
@@ -616,6 +616,7 @@ ul {
 .text-bg p {
   color: #000;
   line-height: 30px;
+  font-size: 18px;
 }
 
 .text-bg i img {
@@ -1267,6 +1268,9 @@ button.owl-prev {
   }
   .p-tag-resume {
     font-size: 13px !important;
+  }
+  .p-faq-answers {
+    font-size: 10px !important;
   }
 }
 /* <!---------------------------FAQ Ends----------------------------------------> */
