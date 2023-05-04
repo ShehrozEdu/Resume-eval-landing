@@ -892,14 +892,14 @@ ul {
 }
 
 .owl-carousel .item {
-  width: 70% !important;
+  width: 90% !important;
   display: flex !important ;
   margin: auto;
   justify-content: center !important;
 }
 
 .owl-carousel .owl-item img {
-  width: 50% !important;
+  width: 70% !important;
   border: 2px solid #535353;
 }
 
@@ -940,7 +940,7 @@ button.owl-prev {
 
 .owl-carousel .owl-dots {
   position: absolute;
-  bottom: -8%;
+  bottom: -5%;
   left: 3%;
   right: 0;
   margin-bottom: 10px;
@@ -974,7 +974,7 @@ button.owl-prev {
 
   .owl-carousel .owl-dots {
     position: absolute;
-    bottom: -10%;
+    bottom: -14%;
   }
 
   .button-download {
