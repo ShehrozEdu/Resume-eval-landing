@@ -1167,7 +1167,7 @@ button.owl-prev {
 /* <!---------------------------Resume Writing Ends----------------------------------------> */
 
 /* <!---------------------------Comparison Resume Starts----------------------------------------> */
-.bordered-container {
+/* .bordered-container {
   background: #f6fbfb;
   border: 1px solid #dee1ff;
   border-radius: 20px;
@@ -1190,7 +1190,7 @@ button.owl-prev {
   color: white;
   padding: 5px 20px;
   border-radius: 50px;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap; 
 }
 
 .left-pill {
@@ -1201,17 +1201,17 @@ button.owl-prev {
   right: 0;
 }
 
-/* Media query for mobile and tablet devices */
+
 @media (max-width: 767px) {
   .left-pill,
   .right-pill {
-    position: static; /* Reset position for mobile and tablet devices */
-    margin-top: 10px; /* Add margin for spacing */
+    position: static; 
+    margin-top: 10px; 
   }
   .border-left-comparison {
     border: none !important;
   }
-}
+} */
 
 /* <!---------------------------Comparison Resume Ends----------------------------------------> */
 /* <!---------------------------FAQ Starts----------------------------------------> */
@@ -1274,6 +1274,7 @@ button.owl-prev {
   }
 }
 /* <!---------------------------FAQ Ends----------------------------------------> */
+
 /* <!---------------------------Contact Us Start----------------------------------------> */
 
 .contact100-more {
